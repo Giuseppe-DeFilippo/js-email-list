@@ -16,6 +16,6 @@ function generaEmail() {
     }
 }
 document.getElementById("bottone").addEventListener("click", generaEmail);
-generaEmail();
+
 
 
