@@ -11,7 +11,7 @@ function generaEmail() {
     lista.innerHTML = "";
     for (i = 0; i < 19; i++) {
         axios.get(url).then(risposta => {
-            lista.innerHTML += `<li>${risposta.data.response}</li>`;
+            lista.innerHTML += `<li class="list-group-item">${risposta.data.response}</li>`;
         })
     }
 }
