@@ -9,7 +9,7 @@ function generaEmail() {
     const url = `https://flynn.boolean.careers/exercises/api/random/mail`;
     let lista = document.getElementById("lista");
     lista.innerHTML = "";
-    for (i = 0; i < 19; i++) {
+    for (i = 0; i < 10; i++) {
         axios.get(url).then(risposta => {
             lista.innerHTML += `<li class="list-group-item">${risposta.data.response}</li>`;
         })
